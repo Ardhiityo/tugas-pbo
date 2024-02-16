@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <form action="/user/add" method="post">
+        
+      <label for="nama">Nama Lengkap :</label> <br>
+      <input type="text" name="nama" id="nama" placeholder="Ex: Joko Widodo" required/>
+      <br>
+      <label for="nim">Nomor Induk Mahasiswa :</label> <br>
+      <input type="number" name="nim" id="nim" placeholder=" Ex: 22040004" required/>
+      <br>
+      <label for="keluhan">Pengaduan :</label> <br>
+      <textarea name="keluhan" id="keluhan" cols="20" rows="5" placeholder="Ceritakan detail keluhan :)" required></textarea>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

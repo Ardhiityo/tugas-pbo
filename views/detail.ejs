@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <h1>Daftar Pengaduan</h1>
+    <a href="/user/add/<%= nim %>">Add Pengaduan</a>
+    <% for (const data of datas) { %>
+      <h2><%= data.nama %> (<%= data.nim %>)</h2>
+      <ul>
+        <li>
+          <h3>Pengaduan:</h3>
+          <textarea cols="40" rows="5" readonly>
+            <%= data.keluhan %></textarea>
+            <p><%= data.waktu %></p>
+        </li>
+      </ul>
+      <% } %>
+  </body>
+</html>
